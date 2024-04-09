@@ -1,6 +1,7 @@
 /* variables*/
 let playerName = "";
 let gameCounter;
+let computerTry;
 /*
 function welcomePlayer() {
 
@@ -12,9 +13,6 @@ function welcomePlayer() {
     return (playerName, gameCounter)
 }
 
-welcomePlayer();
-*/
-let computerTry;
 
 function computerSelection() {
     let randomNumber = Number((Math.random() * 10).toFixed(3));
@@ -37,4 +35,7 @@ function computerSelection() {
     }
 return computerTry;    
 }
+
+welcomePlayer();
 computerSelection();
+*/
