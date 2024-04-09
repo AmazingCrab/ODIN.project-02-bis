@@ -1,6 +1,5 @@
 /* variables*/
 let playerName = "";
-let gameCounter;
 let computerTry;
 let playerTry;
 let playerWins = 0;
@@ -12,7 +11,6 @@ function welcomePlayer() {
         playerName = prompt("What is your name?")
     }
     console.log("Ok, " + playerName + ". Lets Play!")
-    gameCounter = 5;
     return (playerName, gameCounter)
 }
 
