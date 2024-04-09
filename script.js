@@ -2,6 +2,7 @@
 let playerName = "";
 let gameCounter;
 let computerTry;
+let playerTry;
 
 function welcomePlayer() {
 
@@ -38,12 +39,14 @@ function computerSelection() {
 
 
 
+function playerSelection() {
+    playerTry = prompt("Choose!: Rock, Paper or Scissors");
+    playerTry = playerTry.toUpperCase();
+}
+
 
 let playerWins = 0;
-function playerSelection() {
-    let playerTry = prompt("Choose!: Rock, Paper or Scissors");
-    playerTry = playerTry.toUpperCase();
-    console.log(playerTry);
+function gameMatch() {
     switch (true) {
         case (playerTry === "ROCK" && computerTry === "SCISSORS" || playerTry === "PAPER" && computerTry === "ROCK" || playerTry === "SCISSORS" && computerTry === "PAPER"): {
             playerWins++;
@@ -60,6 +63,8 @@ function playerSelection() {
     return playerWins
 }
 
+
 welcomePlayer();
 computerSelection();
 playerSelection();
+gameMatch();
