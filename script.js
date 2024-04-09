@@ -2,7 +2,7 @@
 let playerName = "";
 let gameCounter;
 let computerTry;
-/*
+
 function welcomePlayer() {
 
     while (playerName === "") {
@@ -33,9 +33,33 @@ function computerSelection() {
                 break;
             }
     }
-return computerTry;    
+    return computerTry;
+}
+
+
+
+
+let playerWins = 0;
+function playerSelection() {
+    let playerTry = prompt("Choose!: Rock, Paper or Scissors");
+    playerTry = playerTry.toUpperCase();
+    console.log(playerTry);
+    switch (true) {
+        case (playerTry === "ROCK" && computerTry === "SCISSORS" || playerTry === "PAPER" && computerTry === "ROCK" || playerTry === "SCISSORS" && computerTry === "PAPER"): {
+            playerWins++;
+            alert(playerName + " You won!");
+            break;
+        }
+        case (playerTry === computerTry): {
+            alert(playerName + " Tied Game!");
+            break;
+        }
+        default:
+            alert(playerName + " You Lost")
+    }
+    return playerWins
 }
 
 welcomePlayer();
 computerSelection();
-*/
+playerSelection();
