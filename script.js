@@ -1,9 +1,9 @@
 /* variables*/
-let playerName = "";
-let computerTry;
-let playerTry;
-let playerWins = 0;
-let gameMatches = 0;
+let playerName = "",
+    computerTry,
+    playerTry,
+    playerWins = 0,
+    gameMatches = 0;
 
 function welcomePlayer() {
 
